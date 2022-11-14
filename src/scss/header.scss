@@ -1,0 +1,242 @@
+@mixin text($fs,$ln){
+  font-family:Montserrat, sans-serif;
+  font-style: normal;
+  line-height: $ln;
+  font-weight: normal;
+  font-size: $fs;
+}
+.header{
+  height: 119px;
+  margin-bottom: 50px;
+  &__cat{
+    margin-left: 20px;
+
+  }
+  &__catTitle{
+    text-transform:uppercase;
+  }
+  &__nav{
+    width: 100%;
+    border-bottom:1px solid #676767;
+    position: relative;
+  }
+  &__tab:hover{
+    color: #FFFFFF;
+  }
+  &__cap{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0 10px;
+    background-color:  #EFF0F1;
+  }
+  &__intro{
+    display: flex
+  }
+  &__adress{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #676767;
+    margin-left: 10px;
+    &:before{
+      content: url("../images/header/local.png");
+      margin-right: 5px;
+    }
+  }
+  &__time{
+    position: relative;
+    display:block;
+    justify-content:flex-end;
+    font-family:$ff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #676767;
+    &:before{
+      position: absolute;
+      left: -15%;
+      content: url("../images/header/clock .png");
+    }
+  }
+  &__gmail{
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #676767;
+    margin-left: 100px;
+    margin-right: 10px;
+    &:before{
+      content: url("../images/header/mail.ru.png");
+      position: absolute;
+      top: 10%;
+      left: -25%;
+    }
+  }
+  &__mainHeader{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 67px;
+
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    width: 245px;
+    top: 12px;
+    position: relative;
+  }
+&__btn{
+  width: 185px;
+  height: 45px;
+  background: linear-gradient(180deg, #6C69FF 0%, #4F4BFF 100%);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &::after{
+    content: url("../images/header/catolock.svg");
+    position: absolute;
+    margin-left: 25px;
+  }
+  &:hover{
+    transition: .8s ease-in-out;
+    font-size: 15px;
+  }
+}
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2B2A2A;
+    cursor: pointer;
+  }
+  &__liMenu{
+    margin-right: 12px;
+    &:last-child{
+      margin: 0;
+    }
+    &:hover{
+      padding-bottom: 22.5px;
+      border-bottom: 3px solid  #4F4BFF;
+    }
+  }
+
+  &__Nbtn{
+    position:absolute ;
+    top: 80%;
+    right: 0;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    color: #676767;
+    text-decoration: none;
+    &:hover{
+      transition: .6s ease-in-out;
+      color: #4945FF;
+    }
+
+  }
+  &__number{ position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #2B2A2A;
+    margin-bottom: 13px;
+    right: -8%;
+    text-decoration: none;
+    &::before{
+      width: 30px;
+      height: 30px;
+      content: url("../images/header/call.png");
+      top: -15%;
+      left: -25%;
+      position: absolute;
+    }
+    &:hover{
+      transition: .6s ease-in-out;
+      color: #4945FF;
+    }
+  }
+&__shop{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+   color: #343434;
+  position: relative;
+  &:before{
+    position: absolute;
+    left: -35px;
+    top: -10px;
+    content: url("../images/header/shop.png");
+  }
+    &:after{
+      content: url("../images/header/colich.png");
+      position: absolute;
+      top: -23px;
+      left: -5px;
+    }
+}
+
+  }
+.btn-danger {
+  color: #fff;
+  outline: none;
+  border: none;
+  background: linear-gradient(180deg, #6C69FF 0%, #4F4BFF 100%);
+}
+.dropdown-toggle::after{
+  content:url("../images/header/catolock.svg");
+}
+.dropdown, .dropend, .dropstart, .dropup {
+  list-style-type: none;
+  background: linear-gradient(180deg, #6C69FF 0%, #4F4BFF 100%);
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.nav-link {
+  color: #FFFFFF;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  color: #FFFFFF;
+  isolation: isolate;
+}
+a:hover {
+color: #FFFFFF;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}

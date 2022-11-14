@@ -1,0 +1,194 @@
+p{
+  margin-bottom: 0;
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+.mask{
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+  &__title{
+    @include text(38px,40px);
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2B2A2A;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+
+  }
+  &__title:before{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 3px;
+    width: 390px;
+    height: 10px;
+    background: rgba(73, 69, 255, 0.3);
+    z-index: -1;
+  }
+  &__subtitle{
+    @include text(18px,30px);
+    font-style: normal;
+    font-weight: normal;
+    color: #343434;
+    margin-bottom: 41px;
+  }
+
+
+  &__box{
+    display: flex;
+   /* margin: 0 0 20px 0;*/
+    padding-left: 45px;
+    &:last-child{
+      margin-bottom: 29px;
+    }
+  }
+  &__block1{
+    width: 294px;
+    margin-right:50px ;
+    position: relative;
+    display: block;
+
+  }
+  &__block1:before{
+    content: url("../images/mask/delivery.svg " )  ;
+    position: absolute;
+    height: 46px;
+    left: -15%;
+  }
+
+
+  &__block-3{
+
+    position: relative;
+    margin-right:50px;
+    display: block;
+    width: 294px;
+
+  }
+  &__block-3:before{
+    content: url("../images/mask/facemask 1.svg" );
+    position: absolute;
+    height: 46px;
+    left: -15%;
+  }
+  &__block-2{
+    display: block;
+    width: 294px;
+    position: relative;
+  }
+  &__block-2:before{
+    content: url("../images/mask/coins 1.svg" );
+    position: absolute;
+    height: 46px;
+    left: -15%;
+  }
+  &__block-4{
+    width: 294px;
+    display: block;
+    position: relative;
+
+  }
+  &__block-4:before{
+    content: url("../images/mask/secure1.svg" );
+    position: absolute;
+    height: 46px;
+    left: -15%;
+  }
+  &__h4{
+    @include text(15px,18px);
+    font-style: normal;
+    font-weight: 600;
+    color: #2B2A2A;
+    margin-bottom: 10px;
+  }
+  &__p{
+    @include text(14px,22px);
+    font-style: normal;
+    font-weight: normal;
+    color: #676767;
+  }
+  &__col-6img{
+display: flex;
+    justify-content:flex-end;
+    padding: 20px;
+
+  }
+  &__img{
+    position: relative;
+    right: -15%;
+    width: 85%;
+    height: 100%;
+  }
+  &__btn{
+    width: 218px;
+    height: 55px;
+    background: linear-gradient(180deg, #716FFF 0%, #4945FF 100%);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding:   18px 34px 25px 34px ;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+
+  }
+  &__learn{
+    position: relative;
+    margin-top: 29px;
+   @include text(14px,22px);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+     color: #3C39D0;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      color: #3C39D0;
+    }
+    &:after{
+      position: absolute;
+      left:calc(50% + 90px);
+      top: 50%;
+      transform: translateY(-50%);
+      content: url("../images/mask/figure.svg");
+
+    }
+  }
+  &__btnplay{
+    @include text(14px, 17px);
+    font-style: normal;
+    font-weight: 500;
+    color: #2B2A2A;
+    text-decoration: none;
+    margin-left: 120px;
+    position: relative;
+    &:before{
+      content: url("../images/mask/play.svg");
+      top: 50%;
+      left: -56px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+    &:hover{
+      color: #3C39D0;
+
+    }
+  }
+  &__blocks{
+    width: 705px;
+    height: 226px;
+  }
+
+
+}

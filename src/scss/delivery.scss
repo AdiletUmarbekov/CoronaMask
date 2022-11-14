@@ -1,0 +1,105 @@
+.delivery{
+  padding: 33px 0 70px 0 ;
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2B2A2A;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 420px;
+      height: 8px;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(73, 69, 255, 0.3);
+      z-index: -1;
+    }
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 50px;
+  }
+  &__block{
+    height: 200px;
+    margin-bottom: 20px;
+    background: #F7F7F8;
+    border-radius: 10px;
+    padding: 30px 35px 30px 33px;
+  }
+  &__block2{ position: relative;
+    margin-bottom: 20px;
+    background: #F7F7F8;
+    border-radius: 0 40px;
+    padding: 30px 25px 30px 33px;
+    height: 200px;
+
+  }
+  &__num{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4945FF;
+    margin-bottom: 15px;
+  }
+  &__blocktitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__boxbtn{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    color: #FFFFFF;
+    border: none;
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    background: linear-gradient(180deg, #706DFF 0%, #5451FF 100%);
+    border-radius: 10px;
+    &:hover{
+      transition: 1s ease-in-out;
+      color: #4945FF;
+      background: rgba(239, 240, 241, 0.16);
+      border: 2px solid #4945FF ;
+    }
+  }
+  &__col{
+    column-gap: 20px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content:'';
+      width: 50px;
+      height: 2px;
+      top: 50%;
+      left: -5%;
+      z-index: -1;
+      background-color:rgba(73, 69, 255, 1.6);
+      transform: rotate(0deg), translateY(-50%);
+    }
+    &:first-child{
+      &:before{
+        display: none;
+      }
+    }
+  }
+}

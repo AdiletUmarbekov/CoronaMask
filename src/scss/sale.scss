@@ -1,0 +1,70 @@
+.sale{
+  padding:  70px 0 70px 0;
+  &__img{
+    width: 100%;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+     text-transform: capitalize;
+    color: #2B2A2A;
+    margin-bottom: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 480px;
+      position: absolute;
+      top: 65%;
+      height: 8px;
+      z-index: -1;
+      background: rgba(113, 110, 255, 0.3);
+    }
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2B2A2A;
+    margin-bottom: 30px;
+  }
+  &__p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+     color: #676767;
+  }
+  &__btn{
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    padding:18px  38px  18px 38px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6C69FF 0%, #5A57FF 100%);
+    border-radius: 10px;
+    &:hover{
+      transition: .8s ease-in-out;
+      color: #4945FF;
+      background: rgba(239, 240, 241, 0.46);
+      border: 2px solid #4945FF ;
+    }
+  }
+  &__a{
+    color: #4945FF;
+    text-decoration: none;
+    &:hover{
+      transition: .8s ease-in-out;
+      background-color: #4945FF;
+      color: #FFFFFF;
+      border-radius: 2px;
+    }
+  }
+}

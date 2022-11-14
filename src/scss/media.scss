@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+  .quality__img {
+    margin-left: 64px;
+  }
+}
+@media(min-width: 1025px){
+  .header__logo-burger{
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__logo-burger {
+    display: flex;
+  }
+  .mask__block1, .mask__block-3 {
+    width: 294px;
+    margin-right: 0;
+  }
+}

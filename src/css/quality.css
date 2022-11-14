@@ -1,0 +1,11 @@
+.quality {
+  padding: 70px 0 70px 0;
+  background-color: #F7F7F8;
+}
+.quality__blocktitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+}

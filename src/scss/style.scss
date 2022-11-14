@@ -1,0 +1,52 @@
+@import "../libs/bootstrap/bootstrap.min.css";
+@import "../fonts/montserrat.css";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family:Montserrat, sans-serif ;
+}
+.row{
+  flex-wrap: nowrap;
+}
+.goTop{
+  width: 70px;
+  height: 25px;
+  background:#4945FF;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:Montserrat, sans-serif ;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+  display: none;
+  z-index: 4;
+}
+$ff: Montserrat, sans-serif;
+a:hover{
+  color:#4945FF;
+}
+
+
+@import "header";
+@import "mask";
+@import "catalog";
+@import "video";
+@import "quality";
+@import "sale";
+@import "thanks";
+@import "delivery";
+@import "footer";
+@import "overlay";
+@import "media";

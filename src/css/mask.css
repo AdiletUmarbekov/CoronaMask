@@ -1,0 +1,54 @@
+.mask__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #2B2A2A;
+  margin-bottom: 20px;
+}
+.mask__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #343434;
+}
+.mask__box {
+  width: 709px;
+  display: flex;
+  margin: 40px 0 20px 0;
+}
+.mask__box:last-child {
+  margin-bottom: 29px;
+}
+.mask__block1 {
+  margin-right: 100px;
+  position: relative;
+}
+.mask__block1 :before {
+  content: "";
+  background: url("../images/mask/delivery.svg ") cover/no-repeat;
+  position: absolute;
+  left: -20%;
+}
+.mask__block-3 {
+  display: block;
+  flex-direction: row;
+  margin-right: 100px;
+}
+.mask__h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2B2A2A;
+  margin-bottom: 10px;
+}
+.mask__p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
